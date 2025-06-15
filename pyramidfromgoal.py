@@ -7,7 +7,7 @@ def build_pyramid(start, peak, increment):
 def total_laps(pyramid):
     """Calculates total laps including rest (1 rest per work set)."""
     work_laps = sum(pyramid)
-    rest_laps = len(pyramid)  # 1 rest per work set
+    rest_laps = len(pyramid)  # 1 rest per work set  TODO: rest laps isn't asking for a value, and should be able to have any value 
     return work_laps + rest_laps
 
 def find_best_pyramid(goal_laps, start, increment, match_type):
